@@ -14,6 +14,47 @@
     <title>Multi step Form Boracodar #23</title>
 </head>
 <body>
-    <main>teste</main>
+    <main id="app">
+        <form>
+            <div class="step-progress">
+                <strong class="active done">Contato</strong>
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41663 2L6.41663 7L1.41663 12" stroke="#323238" stroke-width="2" stroke-linecap="square"/>
+                </svg>                    
+                <strong class="active">Empresa</strong>
+                <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.41663 2L6.41663 7L1.41663 12" stroke="#323238" stroke-width="2" stroke-linecap="square"/>
+                </svg>                    
+                <strong>Projeto</strong>
+                                   
+            </div>
+
+            <div class="form-step active">
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" placeholder="Como prefere ser chamado" required />
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="phone">WhatsApp</label>
+                        <input type="text" name="phone" id="phone" placeholder="Digite seu número de Whatsapp" />
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="email">E-mail</label>
+                        <input type="text" name="email" id="email" placeholder="Informe o seu email" required />
+                    </div>
+                </div>
+
+                <div class="button-wrapper">
+                    <button class="btn primary">Continuar</button>
+                </div>
+            </div>
+        </form>
+    </main>
 </body>
+<script src="script.js"></script>
 </html>
