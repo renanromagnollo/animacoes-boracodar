@@ -155,3 +155,11 @@ textarea::placeholder {
     color: var(--color-base-gray-200);
 
 }
+
+.form-step {
+    display: none;
+}
+
+.form-step.active {
+    display: block;
+}

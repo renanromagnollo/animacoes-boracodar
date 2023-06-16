@@ -56,9 +56,8 @@
                         <input type="email" name="email" id="email" placeholder="Informe o seu email" required />
                     </div>
                 </div>
-                <div class="button-wrapper">
-                    <button class="btn secondary">Voltar</button>
-                    <button class="btn primary">Continuar</button>
+                <div class="button-wrapper justify-end">
+                    <button type="button" class="btn primary">Continuar</button>
                 </div>
             </div>
 
@@ -87,15 +86,34 @@
                         <label for="business-about">Sobre seu negócio</label>
                         <textarea 
                             name="business-about" 
-                            id="email" 
+                            id="business-about" 
                             placeholder="Fale um pouco sobre os seus produtos e serviços" 
                             required>
                         </textarea>
                     </div>
                 </div>
                 <div class="button-wrapper">
+                    <button type="button" class="btn secondary">Voltar</button>
+                    <button type="button" class="btn primary">Continuar</button>
+                </div>
+            </div>
+
+            <div class="form-step">
+                <div class="content">
+                    
+                    <div class="input-wrapper">
+                        <label for="project">Objetivos do projeto</label>
+                        <textarea 
+                            name="project" 
+                            id="project" 
+                            placeholder="Descreva quais objetivos deste projeto" 
+                            required>
+                        </textarea>
+                    </div>
+                </div>
+                <div class="button-wrapper">
                     <button class="btn secondary">Voltar</button>
-                    <button class="btn primary">Continuar</button>
+                    <button class="btn primary" type="submit">Enviar resposta</button>
                 </div>
             </div>
         </form>
