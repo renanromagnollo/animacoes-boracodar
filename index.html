@@ -33,23 +33,31 @@
                 <div class="content">
                     <div class="input-wrapper">
                         <label for="name">Name</label>
-                        <input type="text" name="name" id="name" placeholder="Como prefere ser chamado" required />
+                        <input 
+                            id="name" 
+                            type="text" 
+                            name="name" 
+                            placeholder="Como prefere ser chamado" 
+                            required 
+                        />
                     </div>
-                </div>
-                <div class="content">
                     <div class="input-wrapper">
                         <label for="phone">WhatsApp</label>
-                        <input type="text" name="phone" id="phone" placeholder="Digite seu número de Whatsapp" />
+                        <input 
+                            id="phone" 
+                            type="text" 
+                            name="phone" 
+                            placeholder="Digite seu número de Whatsapp" 
+                            onkeypress="return /\d/.test(event.key)"
+                        />
                     </div>
-                </div>
-                <div class="content">
                     <div class="input-wrapper">
                         <label for="email">E-mail</label>
-                        <input type="text" name="email" id="email" placeholder="Informe o seu email" required />
+                        <input type="email" name="email" id="email" placeholder="Informe o seu email" required />
                     </div>
                 </div>
-
                 <div class="button-wrapper">
+                    <button class="btn secondary">Voltar</button>
                     <button class="btn primary">Continuar</button>
                 </div>
             </div>
