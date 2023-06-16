@@ -61,6 +61,43 @@
                     <button class="btn primary">Continuar</button>
                 </div>
             </div>
+
+            <div class="form-step">
+                <div class="content">
+                    <div class="input-wrapper">
+                        <label for="business-name">Nome da empresa</label>
+                        <input 
+                            id="business-name" 
+                            type="text" 
+                            name="business-name" 
+                            placeholder="Qual é o nome da empresa" 
+                        />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="business-colab-number">Número de funcionários</label>
+                        <input 
+                            id="business-colab-number" 
+                            type="text" 
+                            name="business-colab-number" 
+                            placeholder="Digite o número de colaboradores" 
+                            onkeypress="return /\d/.test(event.key)"
+                        />
+                    </div>
+                    <div class="input-wrapper">
+                        <label for="business-about">Sobre seu negócio</label>
+                        <textarea 
+                            name="business-about" 
+                            id="email" 
+                            placeholder="Fale um pouco sobre os seus produtos e serviços" 
+                            required>
+                        </textarea>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button class="btn secondary">Voltar</button>
+                    <button class="btn primary">Continuar</button>
+                </div>
+            </div>
         </form>
     </main>
 </body>
